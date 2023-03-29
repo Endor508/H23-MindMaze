@@ -15,7 +15,10 @@ public class Mouvement : MonoBehaviour
     public float gravity = -9.81f;
     public float jumpSpeed = 5;
 
+    
+
     Vector3 moveVelocity;
+   
 
     //Animateur
     public Animator animator;
@@ -31,16 +34,29 @@ public class Mouvement : MonoBehaviour
     {
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
+        Vector3 baseSpeed = (transform.right * x + transform.forward * z) * speed;
+       
 
-        if(controller.isGrounded)
+        if (controller.isGrounded)
         {
-            moveVelocity = (transform.right * x + transform.forward * z) * speed;
+            moveVelocity = baseSpeed;
          
             
             if(Input.GetButtonDown("Jump"))
             {
                 moveVelocity.y = jumpSpeed;
+                animator.SetBool("Saute", true);
+
+              
+                
             }
+
+            if(Input.GetKey(KeyCode.LeftShift))
+            {
+                moveVelocity = baseSpeed * 1.5f;
+            }
+
+        
         }
 
         moveVelocity.y += gravity * Time.deltaTime;
@@ -48,10 +64,13 @@ public class Mouvement : MonoBehaviour
 
 
         //Animations
+      
         bool marche = animator.GetBool("Marche");
         bool cours = animator.GetBool("Cours");
-        bool veutMarcher = Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S);
+        bool saute = !controller.isGrounded;
+        bool veutMarcher = Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D); 
         bool veutCourir = Input.GetKey(KeyCode.LeftShift);
+       
 
 
         if (veutMarcher && !marche)
@@ -70,7 +89,17 @@ public class Mouvement : MonoBehaviour
         {
             animator.SetBool("Cours", false);
         }
-
-      
+        if (cours && (!veutMarcher || !veutCourir))
+        {
+            animator.SetBool("Cours", false);
+        }
+        if (!saute)
+        {
+            animator.SetBool("Saute", false);
+        }
+        
     }
+
+
 }
+
