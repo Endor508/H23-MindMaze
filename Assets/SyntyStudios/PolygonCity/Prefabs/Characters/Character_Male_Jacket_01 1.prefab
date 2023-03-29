@@ -596,7 +596,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &459984
 Transform:
   m_ObjectHideFlags: 0
@@ -1929,7 +1929,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &465560
 Transform:
   m_ObjectHideFlags: 0
@@ -2188,7 +2188,7 @@ GameObject:
   - component: {fileID: 440500}
   - component: {fileID: 8842090452584203087}
   m_Layer: 6
-  m_Name: Character_Male_Jacket_01
+  m_Name: Character_Male_Jacket_01 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
