@@ -1,3 +1,6 @@
+using System.Collections;
+using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 
 
@@ -12,10 +15,10 @@ public class Mouvement : MonoBehaviour
     public float gravity = -9.81f;
     public float jumpSpeed = 5;
 
-
+    
 
     Vector3 moveVelocity;
-
+   
 
     //Animateur
     public Animator animator;
@@ -32,28 +35,28 @@ public class Mouvement : MonoBehaviour
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
         Vector3 baseSpeed = (transform.right * x + transform.forward * z) * speed;
-
+       
 
         if (controller.isGrounded)
         {
             moveVelocity = baseSpeed;
-
-
-            if (Input.GetButtonDown("Jump"))
+         
+            
+            if(Input.GetButtonDown("Jump"))
             {
                 moveVelocity.y = jumpSpeed;
                 animator.SetBool("Saute", true);
 
-
-
+              
+                
             }
 
-            if (Input.GetKey(KeyCode.LeftShift))
+            if(Input.GetKey(KeyCode.LeftShift))
             {
                 moveVelocity = baseSpeed * 1.5f;
             }
 
-
+        
         }
 
         moveVelocity.y += gravity * Time.deltaTime;
@@ -61,24 +64,24 @@ public class Mouvement : MonoBehaviour
 
 
         //Animations
-
+      
         bool marche = animator.GetBool("Marche");
         bool cours = animator.GetBool("Cours");
         bool saute = !controller.isGrounded;
-        bool veutMarcher = Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D);
+        bool veutMarcher = Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D); 
         bool veutCourir = Input.GetKey(KeyCode.LeftShift);
-
+       
 
 
         if (veutMarcher && !marche)
-        {
-            animator.SetBool("Marche", true);
+        {   
+            animator.SetBool("Marche", (veutMarcher && !marche));
         }
         if (marche && !veutMarcher)
         {
             animator.SetBool("Marche", false);
         }
-        if (!cours && (veutMarcher && veutCourir))
+        if(!cours && (veutMarcher && veutCourir))
         {
             animator.SetBool("Cours", true);
         }
@@ -94,7 +97,7 @@ public class Mouvement : MonoBehaviour
         {
             animator.SetBool("Saute", false);
         }
-
+        
     }
 
 
