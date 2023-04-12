@@ -1,3 +1,4 @@
+
 using UnityEngine;
 
 public class ObjectGrabbable : MonoBehaviour
@@ -17,8 +18,10 @@ public class ObjectGrabbable : MonoBehaviour
 
     public void Drop()
     {
+       
         this.objectGrabPointTransform = null;
         objectRigidbody.useGravity = true;
+        objectRigidbody.AddForce(0,-200,0,ForceMode.Acceleration);
     }
 
     private void FixedUpdate()
