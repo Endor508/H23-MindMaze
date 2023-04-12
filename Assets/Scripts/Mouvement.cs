@@ -46,14 +46,16 @@ public class Mouvement : MonoBehaviour
             {
                 moveVelocity.y = jumpSpeed;
                 animator.SetBool("Saute", true);
-
-              
-                
             }
 
             if(Input.GetKey(KeyCode.LeftShift))
             {
                 moveVelocity = baseSpeed * 1.5f;
+                if (Input.GetButtonDown("Jump"))
+                {
+                    moveVelocity.y = jumpSpeed;
+                    animator.SetBool("Saute", true);
+                }
             }
 
         
