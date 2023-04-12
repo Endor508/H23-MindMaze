@@ -11,7 +11,11 @@ Material:
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
+  m_ValidKeywords:
+  - _DETAIL_MULX2
+  - _METALLICGLOSSMAP
+  - _NORMALMAP
+  - _PARALLAXMAP
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -24,11 +28,11 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BumpMap:
-        m_Texture: {fileID: 2800000, guid: 2150616157031094db835f0f819baa32, type: 3}
+        m_Texture: {fileID: 2800000, guid: fc4581c0d1a2c474e919bdbcecd3192d, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 7eb128ad30381ba429f357ed085517b3, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailMask:
@@ -44,24 +48,24 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 9b096bb3005d8a24d85e11f4c267aec3, type: 3}
+        m_Texture: {fileID: 2800000, guid: 7eb128ad30381ba429f357ed085517b3, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
-        m_Texture: {fileID: 2800000, guid: 1372a40d41879534c9aa2883a1b8a996, type: 3}
+        m_Texture: {fileID: 2800000, guid: 029f71f479d0fff4cb3f080659b63429, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
-        m_Texture: {fileID: 2800000, guid: b5ad42007b692274c9ca6ac3d42f7d7d, type: 3}
+        m_Texture: {fileID: 2800000, guid: 76d0c6162c87ac94896650619ed3ab9d, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ParallaxMap:
-        m_Texture: {fileID: 2800000, guid: 28d319e2da23c014d98ab52ffb360fed, type: 3}
+        m_Texture: {fileID: 2800000, guid: 14b96bd50a90a3e4581c55bac46f7b96, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _BumpScale: 1
+    - _BumpScale: 0.8
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0

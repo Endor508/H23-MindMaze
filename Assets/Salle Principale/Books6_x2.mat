@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Books2-black
+  m_Name: Books6_x2
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -27,7 +27,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BumpMap:
-        m_Texture: {fileID: 2800000, guid: fc4581c0d1a2c474e919bdbcecd3192d, type: 3}
+        m_Texture: {fileID: 2800000, guid: 932ef91ea6040c141aea3dfaff6cbdbd, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -44,22 +44,22 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _EmissionMap:
         m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
+        m_Scale: {x: 1, y: 0.97}
+        m_Offset: {x: 1, y: 1}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 7eb128ad30381ba429f357ed085517b3, type: 3}
+        m_Texture: {fileID: 2800000, guid: 562770b4a82d17549abf1063b969f80b, type: 3}
         m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
+        m_Offset: {x: 1, y: 1}
     - _MetallicGlossMap:
-        m_Texture: {fileID: 2800000, guid: 029f71f479d0fff4cb3f080659b63429, type: 3}
+        m_Texture: {fileID: 2800000, guid: e63938e57a6976843a5096f646e03207, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
-        m_Texture: {fileID: 2800000, guid: 76d0c6162c87ac94896650619ed3ab9d, type: 3}
+        m_Texture: {fileID: 2800000, guid: f1fce8f76c41489459d68f242de96926, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ParallaxMap:
-        m_Texture: {fileID: 2800000, guid: 14b96bd50a90a3e4581c55bac46f7b96, type: 3}
+        m_Texture: {fileID: 2800000, guid: 2bdbd5a8468732642b399c04e8871bc4, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
@@ -81,6 +81,6 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0, g: 0, b: 0, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []

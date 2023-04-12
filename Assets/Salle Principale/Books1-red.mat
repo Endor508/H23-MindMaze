@@ -11,7 +11,11 @@ Material:
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
+  m_ValidKeywords:
+  - _DETAIL_MULX2
+  - _METALLICGLOSSMAP
+  - _NORMALMAP
+  - _PARALLAXMAP
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -24,11 +28,11 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BumpMap:
-        m_Texture: {fileID: 2800000, guid: cf77c38a9477b06419c59656017f156b, type: 3}
+        m_Texture: {fileID: 2800000, guid: 08a0618d02a24ea43b93814f9c2fd79d, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 4d68bc3312b820342b70227a9e45bd87, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailMask:
@@ -44,19 +48,19 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 04c97f1333cd12340bdadb7e3cf0d6f7, type: 3}
+        m_Texture: {fileID: 2800000, guid: 4d68bc3312b820342b70227a9e45bd87, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
-        m_Texture: {fileID: 2800000, guid: 6c46e172646b7ae46b3aa3d06895c8c2, type: 3}
+        m_Texture: {fileID: 2800000, guid: bd6858e3b765c7747a77cc287beb7ab7, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
-        m_Texture: {fileID: 2800000, guid: 854d22d1c5b7d9e40a756334bdf00eeb, type: 3}
+        m_Texture: {fileID: 2800000, guid: db054eb9659164a48b60c72bd4e2aff8, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ParallaxMap:
-        m_Texture: {fileID: 2800000, guid: eb020d260c19b6144b5f49fc8ba06e74, type: 3}
+        m_Texture: {fileID: 2800000, guid: d69603da60ed8374882014bf47ee0d5b, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
