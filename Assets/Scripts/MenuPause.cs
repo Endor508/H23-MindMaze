@@ -8,7 +8,8 @@ public class MenuPause : MonoBehaviour
     public GameObject pauseMenuUI;
 
 
-    void update(){
+    void Update(){
+        Debug.Log(enPause);
         if(Input.GetKeyDown(KeyCode.Escape)){
             if (enPause)
             {
@@ -26,6 +27,7 @@ public class MenuPause : MonoBehaviour
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         enPause = false;
+        Cursor.visible = false;
     }
 
     void MettreEnPause()
@@ -33,6 +35,7 @@ public class MenuPause : MonoBehaviour
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         enPause = true;
+        Cursor.visible = true;
     }
 
 }
