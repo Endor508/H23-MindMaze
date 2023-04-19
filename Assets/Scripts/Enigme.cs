@@ -28,7 +28,7 @@ public class Enigme : MonoBehaviour
 
     }
 
-    void afficherEnigme()
+    public void afficherEnigme()
     {
         enigmeUI.SetActive(true);
         Time.timeScale = 0f;
@@ -36,7 +36,7 @@ public class Enigme : MonoBehaviour
         Cursor.visible = true;
     }
 
-    void cacherEnigme()
+    public void cacherEnigme()
     {
         enigmeUI.SetActive(false);
         Time.timeScale = 1f;
