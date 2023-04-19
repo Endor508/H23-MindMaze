@@ -5,7 +5,6 @@ using UnityEngine;
 public class InteractEnigme : MonoBehaviour
 {
     private Enigme enigme;
-    private bool enigmeActivée = false;
     [SerializeField] private Transform playerCameraTransform;
     [SerializeField] private Transform objectGrabPointTransform;
     

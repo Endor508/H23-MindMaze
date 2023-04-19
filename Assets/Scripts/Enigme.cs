@@ -16,15 +16,19 @@ public class Enigme : MonoBehaviour
     private string d;
     private string solution;
 
-    
+    public string Question { get => question; set => question = value; }
+    public string A { get => a; set => a = value; }
+    public string B { get => b; set => b = value; }
+    public string C { get => c; set => c = value; }
+    public string D { get => d; set => d = value; }
+
     void Awake()
     {
         string path = "Assets/Scripts/enigme.txt";
-        //StreamReader enigme = new StreamReader(path);
         string line = File.ReadLines(path).Skip(id-1).Take(1).First();
         List<string> list = line.Split(';').ToList();
-        question = list[0];
-        a = list[1]; b = list[2]; c = list[3]; d = list[4]; solution = list[5];
+        Question = list[0];
+        A = list[1]; B = list[2]; C = list[3]; D = list[4]; solution = list[5];
 
     }
 
@@ -52,4 +56,6 @@ public class Enigme : MonoBehaviour
 
         //faire les events
     }
+
+
 }
