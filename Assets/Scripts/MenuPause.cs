@@ -1,14 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class MenuPause : MonoBehaviour
 {
     public static bool enPause = false;
     public GameObject pauseMenuUI;
-    string nomMainMenu = "StartMenu";
-    bool vaAuMainMenu = false;
 
 
     void Update(){
@@ -25,16 +22,12 @@ public class MenuPause : MonoBehaviour
         }
     }
 
-     public void ResumerPartie()
+    void ResumerPartie()
     {
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         enPause = false;
-        
-        if (!vaAuMainMenu)
-        {   Cursor.visible = false;
-            Cursor.lockState = CursorLockMode.Locked;
-        }
+        Cursor.visible = false;
     }
 
     void MettreEnPause()
@@ -43,15 +36,6 @@ public class MenuPause : MonoBehaviour
         Time.timeScale = 0f;
         enPause = true;
         Cursor.visible = true;
-        Cursor.lockState = CursorLockMode.Confined;
-
-    }
-
-    public void RetourMainMenu()
-    {
-        SceneManager.LoadScene(nomMainMenu);
-        vaAuMainMenu = true;
-        ResumerPartie();
     }
 
 }
