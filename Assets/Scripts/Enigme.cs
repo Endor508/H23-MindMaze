@@ -34,6 +34,7 @@ public class Enigme : MonoBehaviour
         Time.timeScale = 0f;
         afficher = true;
         Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
     }
 
     public void cacherEnigme()
@@ -42,18 +43,12 @@ public class Enigme : MonoBehaviour
         Time.timeScale = 1f;
         afficher = false;
         Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(afficher == true)
-        {
-            if(Input.GetKeyDown(KeyCode.Escape))
-            {
-                cacherEnigme();
-            }
-        }
 
         //faire les events
     }

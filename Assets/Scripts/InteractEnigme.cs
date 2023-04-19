@@ -5,6 +5,7 @@ using UnityEngine;
 public class InteractEnigme : MonoBehaviour
 {
     private Enigme enigme;
+    private bool enigmeActivée = false;
     [SerializeField] private Transform playerCameraTransform;
     [SerializeField] private Transform objectGrabPointTransform;
     
@@ -24,11 +25,11 @@ public class InteractEnigme : MonoBehaviour
                         enigme.afficherEnigme();
                     }
                 }
-                else
-                {
-                    enigme.cacherEnigme();
-                    enigme = null;
-                }
+            }
+            else
+            {
+                enigme.cacherEnigme();
+                enigme = null;
             }
         }
     }
