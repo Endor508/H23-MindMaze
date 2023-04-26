@@ -16,14 +16,13 @@ public class OuvrirPorte : MonoBehaviour
     }
 
     // Update is called once per frame
-    void OnCollisionEnter(Collision collision)
+    void Update()
     {
-        if(collision.gameObject == saCle && !porteOuverte) 
+        if(Input.GetKey(KeyCode.E) && !porteOuverte) 
         {
            porte.Play();
            porteOuverte=true;
            Destroy(saCle);
-
         }
     }
 }

@@ -3,16 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ClePorte : MonoBehaviour
-{
-    public GameObject saPorte;
+ {[SerializeField] private Animation ouverturePorte;
     
+    
+    public void OuvrirPorte(){
+        ouverturePorte.Play();
+        Destroy(this.gameObject);
 
-    // Update is called once per frame
-    void OnCollisionEnter(Collision collision)
-    {
-        if(collision.gameObject == saPorte)
-        {
-            Destroy(this.gameObject);
-        }    
+
     }
 }
