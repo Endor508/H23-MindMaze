@@ -28,7 +28,7 @@ public class ObjectGrabbable : MonoBehaviour
     {
         if (objectGrabPointTransform != null)
         {
-            float lerpSpeed = 15f;
+            float lerpSpeed = 15000f;
             Vector3 newPosition = Vector3.Lerp(transform.position, objectGrabPointTransform.position, Time.deltaTime * lerpSpeed);
             objectRigidbody.MovePosition(newPosition);
         }
