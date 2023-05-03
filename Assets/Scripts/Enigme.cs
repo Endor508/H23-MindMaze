@@ -2,35 +2,43 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Enigme : MonoBehaviour
 {
     public int id;
     public static bool afficher = false;
     public GameObject enigmeUI;
-    private string question;
-    private string a;
-    private string b;
-    private string c;
-    private string d;
+    [SerializeField] private TextMeshProUGUI question;
+    [SerializeField] private TextMeshProUGUI a;
+    [SerializeField] private TextMeshProUGUI b;
+    [SerializeField] private TextMeshProUGUI c;
+    [SerializeField] private TextMeshProUGUI d; 
     private string solution;
 
-    public string Question { get => question; set => question = value; }
-    public string A { get => a; set => a = value; }
-    public string B { get => b; set => b = value; }
-    public string C { get => c; set => c = value; }
-    public string D { get => d; set => d = value; }
+    public TextMeshProUGUI Question { get => question; set => question = value; }
+    public TextMeshProUGUI A { get => a; set => a = value; }
+    public TextMeshProUGUI B { get => b; set => b = value; }
+    public TextMeshProUGUI C { get => c; set => c = value; }
+    public TextMeshProUGUI D { get => d; set => d = value; }
 
-    void Awake()
+    void Start()
     {
-        string path = "Assets/Scripts/enigme.txt";
-        string line = File.ReadLines(path).Skip(id-1).Take(1).First();
+        string path = "Assets/Scripts/enigmes.txt";
+        string line = File.ReadLines(path).Skip(id - 1).Take(1).First();
         List<string> list = line.Split(';').ToList();
-        Question = list[0];
-        A = list[1]; B = list[2]; C = list[3]; D = list[4]; solution = list[5];
+
+        question.text = list[0]; a.text = list[1]; b.text = list[2]; c.text = list[3]; d.text = list[4];
+
+
+
+
 
     }
+
+   
 
     public void afficherEnigme()
     {
