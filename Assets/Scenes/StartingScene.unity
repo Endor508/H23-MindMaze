@@ -684,7 +684,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: dbbdce9675de5e44bb8de23390bc1d01, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 4c13013284cf93342bc21dd42a8b1999, type: 2}
+      objectReference: {fileID: 2100000, guid: 3b20e72a9ea2b074e8059e0e5070da82, type: 2}
     - target: {fileID: 919132149155446097, guid: dbbdce9675de5e44bb8de23390bc1d01, type: 3}
       propertyPath: m_Name
       value: "Pi\xE8ce \xC9tude"
@@ -1453,7 +1453,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: dbbdce9675de5e44bb8de23390bc1d01, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 4c13013284cf93342bc21dd42a8b1999, type: 2}
+      objectReference: {fileID: 2100000, guid: 3b20e72a9ea2b074e8059e0e5070da82, type: 2}
     - target: {fileID: 919132149155446097, guid: dbbdce9675de5e44bb8de23390bc1d01, type: 3}
       propertyPath: m_Name
       value: "Pi\xE8ce \xC9tude 2"
@@ -5249,7 +5249,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 8574c6380d5fb4f418c2a14cdd42bc63, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 24d9f5e5ce5595344a5785bc51b753d1, type: 2}
+      objectReference: {fileID: 2100000, guid: 84b037715b170f444b2d293b694a03c9, type: 2}
     - target: {fileID: 919132149155446097, guid: 8574c6380d5fb4f418c2a14cdd42bc63, type: 3}
       propertyPath: m_Name
       value: Violon
@@ -10515,7 +10515,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 26935522b2cf3b14e84a7614e73ebb2b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 26935522b2cf3b14e84a7614e73ebb2b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -10556,7 +10556,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 26935522b2cf3b14e84a7614e73ebb2b, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 1ec9645cde28f6b49be36a5f11cc3b75, type: 2}
+      objectReference: {fileID: 2100000, guid: 5196f53f1ff2bf44ba23cf1674a2e34c, type: 2}
     - target: {fileID: 919132149155446097, guid: 26935522b2cf3b14e84a7614e73ebb2b, type: 3}
       propertyPath: m_Name
       value: Mirroir
@@ -14033,7 +14033,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: acecbffc0bd60844f97c358ddaadcc90, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 5411ef1c047122d4e9f461af815ea7ab, type: 2}
+      objectReference: {fileID: 2100000, guid: 35e83b96bb2d0db458de54acbd8ed643, type: 2}
     - target: {fileID: 919132149155446097, guid: acecbffc0bd60844f97c358ddaadcc90, type: 3}
       propertyPath: m_Name
       value: Soft_Chair
