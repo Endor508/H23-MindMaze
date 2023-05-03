@@ -1020,9 +1020,10 @@ Animation:
   m_GameObject: {fileID: 397619359}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 5512dab1f087bfc41ae63347b3d9c00e, type: 2}
+  m_Animation: {fileID: 7400000, guid: 4c6297210ee9d7743af4ea77a8e0302d, type: 2}
   m_Animations:
   - {fileID: 7400000, guid: 5512dab1f087bfc41ae63347b3d9c00e, type: 2}
+  - {fileID: 7400000, guid: 4c6297210ee9d7743af4ea77a8e0302d, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 0
   m_AnimatePhysics: 0
@@ -1049,7 +1050,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh25006
+  m_Name: pb_Mesh35430
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -1780,7 +1781,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh24852
+  m_Name: pb_Mesh35274
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -2691,7 +2692,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1301157328}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 873e24be754b51a4bbbc09863e47139e, type: 3}
+  m_Script: {fileID: 11500000, guid: 0df9db459f5cb8a4786d4d00f0ec4cff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ouverturePorte: {fileID: 397619360}
@@ -4005,7 +4006,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh25036
+  m_Name: pb_Mesh35460
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -5218,10 +5219,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d581a56be39726449b80bbfc1072ddae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerCameraTransform: {fileID: 126165836}
-  keyLayerMask:
-    serializedVersion: 2
-    m_Bits: 256
 --- !u!114 &2012135586
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5231,11 +5228,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 2012135579}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7cfeddc74a9789d4e9e94724f8aee821, type: 3}
+  m_Script: {fileID: 11500000, guid: 5d1518c118bc4984cbd3f239f0b7fc67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   playerCameraTransform: {fileID: 126165836}
-  objectGrabPointTransform: {fileID: 738368858}
+  keyLayerMask:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!1 &2013171314
 GameObject:
   m_ObjectHideFlags: 0
@@ -8698,13 +8697,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5733279121c0d848a52441f19366f4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: 4
-  enigmeUI: {fileID: 150862342}
-  question: {fileID: 1357227218}
-  a: {fileID: 747212499}
-  b: {fileID: 2102478614}
-  c: {fileID: 307575128}
-  d: {fileID: 1398498230}
 --- !u!1 &2137319463
 GameObject:
   m_ObjectHideFlags: 0
