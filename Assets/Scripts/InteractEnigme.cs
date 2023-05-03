@@ -7,6 +7,7 @@ public class InteractEnigme : MonoBehaviour
     private Enigme enigme;
     [SerializeField] private Transform playerCameraTransform;
     [SerializeField] private Transform objectGrabPointTransform;
+    
 
 
     // Update is called once per frame
