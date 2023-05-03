@@ -1,5 +1,5 @@
-Si x+6=9, alors 3x+1=?;3;9;10;46;c
-Quel est le résultat de l'expression suivante: 3^4 - 2 * (5 + 2^3) / 11?;38.18;39.00;41.91;43.82;c
-Quel est le nom du nombre d'or, qui est approximativement égal à 1,618?;Phi;Epsilon;Delta;Gamma;a
-Quelle est la dérivée de la fonction sin(x) par rapport à x?;-sin(x);tan(x);sec(x);cos(x);d
-Quel est le produit scalaire de deux vecteurs perpendiculaires?;-1;0;1;Cela dépend des vecteurs;b
+Si x+6=9, alors 3x+1=?;3;9;10;46;C
+Quel est le résultat de l'expression suivante: 3^4 - 2 * (5 + 2^3) / 11?;38.18;39.00;41.91;43.82;C
+Quel est le nom du nombre d'or, qui est approximativement égal à 1,618?;Phi;Epsilon;Delta;Gamma;A
+Quelle est la dérivée de la fonction sin(x) par rapport à x?;-sin(x);tan(x);sec(x);cos(x);D
+Quel est le produit scalaire de deux vecteurs perpendiculaires?;-1;0;1;Cela dépend des vecteurs;B

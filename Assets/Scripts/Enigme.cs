@@ -15,14 +15,10 @@ public class Enigme : MonoBehaviour
     [SerializeField] private TextMeshProUGUI a;
     [SerializeField] private TextMeshProUGUI b;
     [SerializeField] private TextMeshProUGUI c;
-    [SerializeField] private TextMeshProUGUI d; 
+    [SerializeField] private TextMeshProUGUI d;
+    private string boutonNom;
     private string solution;
 
-    public TextMeshProUGUI Question { get => question; set => question = value; }
-    public TextMeshProUGUI A { get => a; set => a = value; }
-    public TextMeshProUGUI B { get => b; set => b = value; }
-    public TextMeshProUGUI C { get => c; set => c = value; }
-    public TextMeshProUGUI D { get => d; set => d = value; }
 
     void Start()
     {
@@ -30,15 +26,11 @@ public class Enigme : MonoBehaviour
         string line = File.ReadLines(path).Skip(id - 1).Take(1).First();
         List<string> list = line.Split(';').ToList();
 
-        question.text = list[0]; a.text = list[1]; b.text = list[2]; c.text = list[3]; d.text = list[4];
+        question.text = list[0]; a.text = list[1]; b.text = list[2]; c.text = list[3]; d.text = list[4]; solution = list[5];
 
-
-
-
-
+        boutonNom = "Option " + solution;
+        
     }
-
-   
 
     public void afficherEnigme()
     {
@@ -58,11 +50,15 @@ public class Enigme : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
     }
 
+    void TaskOnClick()
+    {
+        Debug.Log("oui");
+    }
+
     // Update is called once per frame
     void Update()
     {
-
-        //faire les events
+       
     }
 
 
