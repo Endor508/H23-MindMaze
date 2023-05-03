@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Soft_Chair
+  m_Name: Chandelier_02 - Default_Albedo
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -27,7 +27,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BumpMap:
-        m_Texture: {fileID: 2800000, guid: fd6413250e4243444986ec3ff56f3b8c, type: 3}
+        m_Texture: {fileID: 2800000, guid: 79c6eadc2c8b2184b9d1f280aa56cfc0, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -47,19 +47,19 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 8f0f6b016cbfc0846b03fa54b7e526a1, type: 3}
+        m_Texture: {fileID: 2800000, guid: 59c9ac55498a5514b8e9ff0997ce712d, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
-        m_Texture: {fileID: 2800000, guid: 3bbedb4feaa227d44af82d8d34cc2c80, type: 3}
+        m_Texture: {fileID: 2800000, guid: 144497daee1dbf14c9fd2583b8e31f87, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
-        m_Texture: {fileID: 2800000, guid: d1660de404795c84a8bee0f1124e8acc, type: 3}
+        m_Texture: {fileID: 2800000, guid: cd9c9cba2aa2b4e47ae81e8e884f9ecc, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ParallaxMap:
-        m_Texture: {fileID: 2800000, guid: 0cc8819b3a2e85245aa78e3cae783b72, type: 3}
+        m_Texture: {fileID: 2800000, guid: f04c76ed4655fca40a3db91592de7b3b, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
