@@ -4,6 +4,7 @@ using System.IO;
 using System.IO.IsolatedStorage;
 using System.Linq;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -17,8 +18,9 @@ public class Enigme : MonoBehaviour
     [SerializeField] private TextMeshProUGUI b;
     [SerializeField] private TextMeshProUGUI c;
     [SerializeField] private TextMeshProUGUI d;
+    [SerializeField] private TextMeshProUGUI score;
 
-    
+
     [SerializeField] private Button A;
     [SerializeField] private Button B;
     [SerializeField] private Button C;
@@ -82,6 +84,10 @@ public class Enigme : MonoBehaviour
     void TaskOnClickReussi()
     {
         Debug.Log("oui");
+        int calcul = int.Parse(score.text) + 1;
+        score.text = calcul.ToString();
+
+
     }
 
     void TaskOnClickEchec()
