@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.45118082, g: 0.49985027, b: 0.567923, a: 1}
+  m_IndirectSpecularColor: {r: 0.45118004, g: 0.49984962, b: 0.5679218, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -973,7 +973,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: -1.5029907, z: 0, w: 0}
+  m_margin: {x: 0.0000017299582, y: -1.5029907, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -995,7 +995,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 335341224}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.0000023992}
+  m_LocalPosition: {x: 0, y: 0, z: 3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1004,8 +1004,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5518089, y: 0.534542}
-  m_AnchoredPosition: {x: 316.38, y: 289.75}
-  m_SizeDelta: {x: 84.3386, y: 78.591}
+  m_AnchoredPosition: {x: 328.9403, y: 200.99084}
+  m_SizeDelta: {x: 58.4581, y: 74.6094}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &388860651
 GameObject:
@@ -1155,11 +1155,12 @@ Animation:
   m_GameObject: {fileID: 397619359}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 56f1935969cc05241b0f78341fd1e09b, type: 2}
+  m_Animation: {fileID: 7400000, guid: f3a744c29c4cbd749ade30e7fd0d2600, type: 2}
   m_Animations:
   - {fileID: 7400000, guid: 5512dab1f087bfc41ae63347b3d9c00e, type: 2}
   - {fileID: 7400000, guid: 4c6297210ee9d7743af4ea77a8e0302d, type: 2}
   - {fileID: 7400000, guid: 56f1935969cc05241b0f78341fd1e09b, type: 2}
+  - {fileID: 7400000, guid: f3a744c29c4cbd749ade30e7fd0d2600, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 0
   m_AnimatePhysics: 0
@@ -1186,7 +1187,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh24826
+  m_Name: pb_Mesh49716
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -1418,7 +1419,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh24752
+  m_Name: pb_Mesh49642
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -1917,7 +1918,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh24670
+  m_Name: pb_Mesh49560
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -3151,7 +3152,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1301157328}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 873e24be754b51a4bbbc09863e47139e, type: 3}
+  m_Script: {fileID: 11500000, guid: dd0d733daad87494688af6ff39818978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ouverturePorte: {fileID: 397619360}
@@ -4142,7 +4143,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh24856
+  m_Name: pb_Mesh49746
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -4534,7 +4535,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh39886
+  m_Name: pb_Mesh49444
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -5353,7 +5354,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2012135579}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d581a56be39726449b80bbfc1072ddae, type: 3}
+  m_Script: {fileID: 11500000, guid: da072936284157848b2348d3c661fbf7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   playerCameraTransform: {fileID: 126165836}
@@ -5371,7 +5372,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2012135579}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7cfeddc74a9789d4e9e94724f8aee821, type: 3}
+  m_Script: {fileID: 11500000, guid: 646e0d00afbffb5489ef2f0431dca94a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   playerCameraTransform: {fileID: 126165836}
@@ -8835,7 +8836,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2136711664}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a5733279121c0d848a52441f19366f4c, type: 3}
+  m_Script: {fileID: 11500000, guid: 85dd916918b824741a918fa10f7d557e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   id: 1

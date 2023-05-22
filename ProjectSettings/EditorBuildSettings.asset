@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PlayerTest.unity
     guid: 75f680a829850cf42ac46735eb211519
+  - enabled: 1
+    path: Assets/Scenes/MathV.2.unity
+    guid: 34f67b08e2b8f8f4eac76b27fa741772
+  - enabled: 1
+    path: Assets/Scenes/StartingScene.unity
+    guid: 1c26ad89ba07fe041898977dce4a270a
   m_configObjects: {}
