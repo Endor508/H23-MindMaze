@@ -87,11 +87,13 @@ public class Enigme : MonoBehaviour
     {
         int calcul = int.Parse(score.text) + 1;
         score.text = calcul.ToString();
+        cacherEnigme();
     }
 
     void TaskOnClickEchec()
     {
         systemeDeVies.pointsDeVies -= 1;
+        cacherEnigme();
     }
 
     // Update is called once per frame
