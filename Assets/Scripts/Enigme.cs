@@ -29,6 +29,8 @@ public class Enigme : MonoBehaviour
     private Button boutonSolution;
     private List<Button> listButton = new List<Button>();
 
+    public SystemeDeVies systemeDeVies;
+
 
 
 
@@ -83,16 +85,13 @@ public class Enigme : MonoBehaviour
 
     void TaskOnClickReussi()
     {
-        Debug.Log("oui");
         int calcul = int.Parse(score.text) + 1;
         score.text = calcul.ToString();
-
-
     }
 
     void TaskOnClickEchec()
     {
-        Debug.Log("non");
+        systemeDeVies.pointsDeVies -= 1;
     }
 
     // Update is called once per frame
