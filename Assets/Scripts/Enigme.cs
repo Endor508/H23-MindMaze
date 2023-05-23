@@ -36,11 +36,6 @@ public class Enigme : MonoBehaviour
     private string solution;
 
 
-    void Start()
-    {
-    
-       
-    }
 
     public void afficherEnigme()
     {
@@ -94,10 +89,8 @@ public class Enigme : MonoBehaviour
 
     void TaskOnClickEchec()
     {
-        systemeDeVies.pointsDeVies -= 1;
-    
         cacherEnigme();
-        
+        systemeDeVies.pointsDeVies -= 1;
     }
 
 
@@ -111,12 +104,6 @@ public class Enigme : MonoBehaviour
 
     }
 
-    // Update is called once per frame
-    void Update()
-       
-    {
-        
-    }
 
 
 }
