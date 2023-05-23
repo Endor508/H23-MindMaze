@@ -27,6 +27,10 @@ public class Enigme : MonoBehaviour
     [SerializeField] private Button C;
     [SerializeField] private Button D;
 
+
+	[SerializeField] private string path;
+
+
     private List<Button> listButton = new List<Button>();
 
     public SystemeDeVies systemeDeVies;
@@ -44,7 +48,6 @@ public class Enigme : MonoBehaviour
         afficher = true;
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
-        string path = "Assets/Scripts/enigmes.txt";
         string line = File.ReadLines(path).Skip(id - 1).Take(1).First();
         List<string> list = line.Split(';').ToList();
 
