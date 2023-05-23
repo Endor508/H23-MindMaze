@@ -789,7 +789,7 @@ MonoBehaviour:
   B: {fileID: 298614146}
   C: {fileID: 1821577744}
   D: {fileID: 1028224427}
-  path: Assets/Scripts/enigmes2.txt
+  path: Assets/Enigmes/enigmes2.txt
   systemeDeVies: {fileID: 227333999}
 --- !u!1001 &88360616
 PrefabInstance:
@@ -6574,7 +6574,7 @@ MonoBehaviour:
   B: {fileID: 298614146}
   C: {fileID: 1821577744}
   D: {fileID: 1028224427}
-  path: Assets/Scripts/enigmes2.txt
+  path: Assets/Enigmes/enigmes2.txt
   systemeDeVies: {fileID: 227333999}
 --- !u!1001 &755104725
 PrefabInstance:
@@ -10108,7 +10108,7 @@ MonoBehaviour:
   B: {fileID: 298614146}
   C: {fileID: 1821577744}
   D: {fileID: 1028224427}
-  path: Assets/Scripts/enigmes2.txt
+  path: Assets/Enigmes/enigmes2.txt
   systemeDeVies: {fileID: 227333999}
 --- !u!1001 &1176928742
 PrefabInstance:
@@ -13530,7 +13530,7 @@ MonoBehaviour:
   B: {fileID: 298614146}
   C: {fileID: 1821577744}
   D: {fileID: 1028224427}
-  path: Assets/Scripts/enigmes2.txt
+  path: Assets/Enigmes/enigmes2.txt
   systemeDeVies: {fileID: 227333999}
 --- !u!1001 &1555207712
 PrefabInstance:
@@ -17556,7 +17556,7 @@ MonoBehaviour:
   B: {fileID: 298614146}
   C: {fileID: 1821577744}
   D: {fileID: 1028224427}
-  path: Assets/Scripts/enigmes2.txt
+  path: Assets/Enigmes/enigmes2.txt
   systemeDeVies: {fileID: 227333999}
 --- !u!1 &1940999047
 GameObject:
