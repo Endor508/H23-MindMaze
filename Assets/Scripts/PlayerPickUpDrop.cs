@@ -11,6 +11,7 @@ public class PlayerPickUpDrop : MonoBehaviour
     void Update()
     {
 
+        //utilise un raycast pour mesurer la distance entre l'objet et le joueur pour savoir si l'objet est assez proche pour être prise
         if (Input.GetKeyDown(KeyCode.E))
         {
             if (objectGrabbable == null)

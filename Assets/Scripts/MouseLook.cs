@@ -18,6 +18,7 @@ public class MouseLook : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //permet de bouger la caméra selon la souris
         float MouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
         float MouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
 

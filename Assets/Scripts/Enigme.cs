@@ -10,6 +10,7 @@ using UnityEngine.UI;
 
 public class Enigme : MonoBehaviour
 {
+    //variables
     public int id;
     public static bool afficher = false;
     public GameObject enigmeUI;
@@ -37,6 +38,7 @@ public class Enigme : MonoBehaviour
 
 
 
+    //affiche l'ui de l'enigme avec la question et les réponses selon le fichier "enigmes" et l'id
     public void afficherEnigme()
     {
         enigmeUI.SetActive(true);
@@ -50,6 +52,8 @@ public class Enigme : MonoBehaviour
 
          question.text = list[0]; a.text = list[1]; b.text = list[2]; c.text = list[3]; d.text = list[4]; solution = list[5];
          listButton.Add(A); listButton.Add(B); listButton.Add(C); listButton.Add(D);
+
+         //ajoute des listeners aux boutons
         for(int i = 0; i < listButton.Count; i++)
         {
             if (listButton[i].name == solution)
@@ -64,9 +68,9 @@ public class Enigme : MonoBehaviour
 
         list.Clear();
 
-
     }
 
+    //cache l'ui de l'énigme et enlève les listeners
     public void cacherEnigme()
     {
         enigmeUI.SetActive(false);
@@ -78,6 +82,7 @@ public class Enigme : MonoBehaviour
     
     }
 
+    //ajoute un point lorsque le joueur selectionne la bonne réponse
     void TaskOnClickReussi()
     {
         int calcul = int.Parse(score.text) + 1;
@@ -87,13 +92,14 @@ public class Enigme : MonoBehaviour
         
     }
 
+    //enlève un point lorsque le joueur selectionne la bonne réponse
     void TaskOnClickEchec()
     {
         cacherEnigme();
         systemeDeVies.pointsDeVies -= 1;
     }
 
-
+    //enlàve les listeners
     void RemoveListeners(){
         for(int i = 0; i < listButton.Count; i++)
         {

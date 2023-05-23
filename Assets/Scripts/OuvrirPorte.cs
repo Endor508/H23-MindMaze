@@ -5,16 +5,11 @@ using UnityEngine;
 public class OuvrirPorte : MonoBehaviour
 {
 
-
+    //variables
     public Animation porte;
     bool porteOuverte = false;
     public GameObject saCle;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
+    
     // Update is called once per frame
     void Update()
     {

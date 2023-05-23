@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class PlayerOpenDoor : MonoBehaviour
 {
+    //Variables
     [SerializeField] private Transform playerCameraTransform;
     [SerializeField] private LayerMask keyLayerMask;
     [SerializeField] private TextMeshProUGUI score;
@@ -14,6 +15,7 @@ public class PlayerOpenDoor : MonoBehaviour
 
     // Update is called once per frame
     void Update()
+    //utilise un raycast pour mesurer la distance entre la clé et le joueur pour savoir si la clé est assez proche pour être utlisée
     {
         if (Input.GetKeyDown(KeyCode.E)){
             float keyDistance = 5f;
@@ -24,6 +26,7 @@ public class PlayerOpenDoor : MonoBehaviour
             }
         }
 
+        //si le score est égale à 5, la clé apparait
         int scoreInt = int.Parse(score.text);
         if(scoreInt >= 5) 
         {

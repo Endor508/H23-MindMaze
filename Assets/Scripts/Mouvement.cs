@@ -8,10 +8,10 @@ using UnityEngine;
 public class Mouvement : MonoBehaviour
 {
 
+    //variables
     public CharacterController controller;
 
     public float speed = 7f;
-    //public float rotationSpeed = 90;
     public float gravity = -9.81f;
     public float jumpSpeed = 5;
 
@@ -41,13 +41,14 @@ public class Mouvement : MonoBehaviour
         {
             moveVelocity = baseSpeed;
          
-            
+            //Permet de sauter
             if(Input.GetButtonDown("Jump"))
             {
                 moveVelocity.y = jumpSpeed;
                 animator.SetBool("Saute", true);
             }
 
+            //permet de courir et de sauter en même temps
             if(Input.GetKey(KeyCode.LeftShift))
             {
                 moveVelocity = baseSpeed * 1.5f;

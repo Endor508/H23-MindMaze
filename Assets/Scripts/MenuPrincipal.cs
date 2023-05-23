@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-
+//permet d'accéder aux différents niveaux ou de quitter le jeu
 public class MenuPrincipal : MonoBehaviour
 {
     public string nomSceneJeu = "MathV.2";

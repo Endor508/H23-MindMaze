@@ -5,12 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class MenuPause : MonoBehaviour
 {
+    //variables
     public static bool enPause = false;
     public GameObject pauseMenuUI;
     string nomMainMenu = "StartMenu";
     bool vaAuMainMenu = false;
 
-
+    //s'occupe de mettre en pause le jeu ou de resumer le jeu lorsque le joueur appuie sur échap
     void Update(){
         if(Input.GetKeyDown(KeyCode.Escape)){
             if (enPause)
@@ -24,6 +25,7 @@ public class MenuPause : MonoBehaviour
         }
     }
 
+    //s'occupe de resumer la partie
     public void ResumerPartie()
     {
         pauseMenuUI.SetActive(false);
@@ -39,6 +41,7 @@ public class MenuPause : MonoBehaviour
       
     }
 
+    //s'occupe de mettre en pause la partie
     void MettreEnPause()
     {
         pauseMenuUI.SetActive(true);
@@ -49,6 +52,7 @@ public class MenuPause : MonoBehaviour
 
     }
 
+    //permet de retourner au menu
     public void RetournerMainMenu ()
     {
         SceneManager.LoadScene(nomMainMenu);

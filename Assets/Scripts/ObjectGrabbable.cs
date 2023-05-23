@@ -10,12 +10,15 @@ public class ObjectGrabbable : MonoBehaviour
     {
         objectRigidbody = GetComponent<Rigidbody>();
     }
+
+    //permet de grab un objet
     public void Grab(Transform objectGrabPointTransform)
     {
         this.objectGrabPointTransform = objectGrabPointTransform;
         objectRigidbody.useGravity = false;
     }
 
+    //permet de drop un objet
     public void Drop()
     {
        
@@ -24,6 +27,7 @@ public class ObjectGrabbable : MonoBehaviour
         objectRigidbody.AddForce(0,-200,0,ForceMode.Acceleration);
     }
 
+    //permet au joueur de garder l'objet dans sa "main"
     private void FixedUpdate()
     {
         if (objectGrabPointTransform != null)
