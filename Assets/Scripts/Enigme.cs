@@ -27,12 +27,10 @@ public class Enigme : MonoBehaviour
     [SerializeField] private Button C;
     [SerializeField] private Button D;
 
-    private Button boutonSolution;
     private List<Button> listButton = new List<Button>();
 
     public SystemeDeVies systemeDeVies;
 
-    private bool montrer = false;
 
     private string solution;
 
