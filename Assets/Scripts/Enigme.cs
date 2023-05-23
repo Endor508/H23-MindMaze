@@ -31,38 +31,15 @@ public class Enigme : MonoBehaviour
 
     public SystemeDeVies systemeDeVies;
 
-
-
+    private bool montrer = false;
 
     private string solution;
 
 
-    void Awake()
+    void Start()
     {
-        string path = "Assets/Scripts/enigmes.txt";
-        string line = File.ReadLines(path).Skip(id - 1).Take(1).First();
-        List<string> list = line.Split(';').ToList();
-
-        question.text = list[0]; a.text = list[1]; b.text = list[2]; c.text = list[3]; d.text = list[4]; solution = list[5];
-
-        listButton.Add(A); listButton.Add(B); listButton.Add(C); listButton.Add(D);
-
-        
-        for(int i = 0; i < listButton.Count; i++)
-        {
-            if (listButton[i].name == solution)
-            {
-                listButton[i].onClick.AddListener(delegate { TaskOnClickReussi(); });
-            }
-            else
-            {
-                listButton[i].onClick.AddListener(delegate { TaskOnClickEchec(); });
-            }
-        }
-            
-        
-
-
+    
+       
     }
 
     public void afficherEnigme()
@@ -72,6 +49,27 @@ public class Enigme : MonoBehaviour
         afficher = true;
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
+        string path = "Assets/Scripts/enigmes.txt";
+        string line = File.ReadLines(path).Skip(id - 1).Take(1).First();
+        List<string> list = line.Split(';').ToList();
+
+         question.text = list[0]; a.text = list[1]; b.text = list[2]; c.text = list[3]; d.text = list[4]; solution = list[5];
+         listButton.Add(A); listButton.Add(B); listButton.Add(C); listButton.Add(D);
+        for(int i = 0; i < listButton.Count; i++)
+        {
+            if (listButton[i].name == solution)
+            {
+                listButton[i].onClick.AddListener(TaskOnClickReussi);
+            }
+            else
+            {
+                listButton[i].onClick.AddListener(TaskOnClickEchec);
+            }
+        }
+
+        list.Clear();
+
+
     }
 
     public void cacherEnigme()
@@ -81,19 +79,36 @@ public class Enigme : MonoBehaviour
         afficher = false;
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
+        RemoveListeners();
+    
     }
 
     void TaskOnClickReussi()
     {
         int calcul = int.Parse(score.text) + 1;
         score.text = calcul.ToString();
+      
         cacherEnigme();
+        
     }
 
     void TaskOnClickEchec()
     {
         systemeDeVies.pointsDeVies -= 1;
+    
         cacherEnigme();
+        
+    }
+
+
+    void RemoveListeners(){
+        for(int i = 0; i < listButton.Count; i++)
+        {
+ 
+            listButton[i].onClick.RemoveAllListeners();
+    
+        }
+
     }
 
     // Update is called once per frame
