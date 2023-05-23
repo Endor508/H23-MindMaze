@@ -65,6 +65,8 @@ public class Enigme : MonoBehaviour
         }
 
         list.Clear();
+        
+       
 
     }
 
@@ -77,7 +79,8 @@ public class Enigme : MonoBehaviour
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
         RemoveListeners();
-    
+        
+
     }
 
     //ajoute un point lorsque le joueur selectionne la bonne réponse
@@ -87,7 +90,8 @@ public class Enigme : MonoBehaviour
         score.text = calcul.ToString();
       
         cacherEnigme();
-        
+        Destroy(this.gameObject);
+
     }
 
     //enlève un point lorsque le joueur selectionne la bonne réponse
@@ -97,7 +101,7 @@ public class Enigme : MonoBehaviour
         systemeDeVies.pointsDeVies -= 1;
     }
 
-    //enlàve les listeners
+    //"enlève" les listeners
     void RemoveListeners(){
         for(int i = 0; i < listButton.Count; i++)
         {
